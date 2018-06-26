@@ -1,0 +1,107 @@
+<html>
+<head>
+    <title>
+        Student login page
+    </title>
+<script >function pageload() {
+    alert("page loaded");
+    alert("not loading");
+}
+function reset() {
+    document.write("registrationform.html");
+}
+function passw(){
+    var x=document.login.paswrd.value;
+    if(x>9999){
+        alert("input is long");
+    }}
+    var y=document.login.mob.value;
+     if(y>999999999||y<9000000000){
+         alert("invalid mobile number");
+     }
+
+</script>
+    <link src="E:\css\bootstrap.css"></link>
+    <link rel="icon" href="download.jpg">
+    <link rel="stylesheet" type="text/javascript" href="fi">
+    <style>
+        table,th
+        {text-align: center;}
+        .a{color: white;
+            background-color: brown;
+            text-align: center;
+        }
+        .b{color: white;
+            background-color: darkcyan;
+        }
+        .c{color: white;
+            background-color: darkcyan;}
+        .d{color: white;
+            background-color: darkcyan;
+        }
+    </style>
+
+</head>
+<body onload="pageload()" background="download.jpg" >
+<h2 class="a">REGISTRATION/LOGIN PAGE<hr></h2>
+
+<form name="login">
+    <blockquote> <h3 class="b"><strong>Sign in</strong></h3><br>
+     <input type="text" required placeholder="UserName" name="username"><br><br>
+        <input type="password" required placeholder="password" name="paswrd" id="pass">
+
+
+            <input type="submit" onclick="passw()"><br><br>
+        <input type="submit" name="reset" onclick="reset()"><br><br>
+        <b>Signin With:</b> <a href="https://www.facebook.com/"><img src="download2.png" width=  "25"></a>
+        <a href="https://www.gmail.com/"><img src="download3.png" width=  "30"></a>
+        <a href="https://www.yahoo.com/"><img src="download5.png" width=  "40"></a>
+    </blockquote>
+     <br><br>
+
+    <blockquote> <h3 class="c"><strong>Personal Info.</strong></h3><br></blockquote>
+     <blockquote><input type="text" required placeholder="firstname" name="Firstname">
+         <input type="text" required placeholder="lastname" name="lastname"> <br><br>
+         <input type="email" required placeholder="mail" name="mail"> <input type="number" required placeholder="mobile no" name="mob"><br><br>
+    Male:<input type="radio" name="male">    female:<input type="radio" name="male"> Others:<input type="radio" name="male"><br><br>
+     Upload Image:<input type="image"><br><br>
+    <input type="submit" style="width: 10%; color: white; background-color: cadetblue; content: normal "></blockquote><br>
+
+
+    <blockquote> <h3 class="d"><strong>Education</strong></h3><br></blockquote>
+       <table width="100%">
+           <tr>
+               <th>Courses</th>
+               <th>University/college</th>
+               <th>Passout Year</th>
+               <th>Percentage</th>
+           </tr>
+
+           <tr>
+               <td>SSL</td>
+               <td><input type="text" required placeholder="School/Colleg"></td>
+               <td><input type="date" required placeholder="yyyy"></td>
+               <td><input type="number"required placeholder="%"></td>
+           </tr>
+
+           <tr>
+               <td>Graduation</td>
+               <td><input type="text"required placeholder="School/Colleg"></td>
+               <td><input type="date"required placeholder="yyyy"></td>
+               <td><input type="number"required placeholder="%"></td>
+           </tr>
+
+           <tr>
+               <td>P.G</td>
+               <td><input type="text"required placeholder="School/Colleg"></td>
+               <td><input type="date"required placeholder="yyyy"></td>
+               <td><input type="number"required placeholder="%"></td>
+           </tr>
+       </table></form>
+<blockquote><button type="submit"  style="width: 10%; color: white; background-color: cadetblue; content: normal "><a href="html1.html" style="color: white">save</a></button> </blockquote>
+</blockquote>
+
+
+
+</body>
+</html>

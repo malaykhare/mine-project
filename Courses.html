@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Courses</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+        <script>
+
+        var imgArray=["blueprint-3445659_1920.jpg","campus-1818084_1920.jpg","library-1697314_1920.jpg"];
+        var i=0;
+        setInterval(slide,2000);
+        function slide() {
+            document.getAnonymousElementByAttribute("parallax.background:url").src=imgArray[i];
+
+        if(i<imgArray.length-1){
+            i++;
+        }
+        else{
+            i=0;
+        }
+        }
+
+
+
+        </script>
+
+    <style>
+
+        .navbar-inverse .navbar-brand{
+            font-size: 20px;
+            color: wheat;
+            float: right;
+        }
+
+        .navbar-inverse .navbar-nav>li>a{
+            font-size: 20px;
+            color: wheat;
+            float: right;
+        }
+        .navbar-inverse{
+            float: right;
+        }
+
+        html {
+            height: 100%;
+        }
+
+        .parallax {
+            /* The image used */
+            background-image: url('blueprint-3445659_1920.jpg');
+
+            /* Full height */
+            height: 17%;
+
+            /* Create the parallax scrolling effect */
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+        @media only screen and (max-device-width: 1366px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+
+
+
+
+        body {
+            position: relative;
+            height:100%;
+        }
+        #section1 {padding-top:50px;height:500px;color: wheat; background-color: brown;}
+        #section2 {padding-top:50px;height:500px;color: wheat;background-color: brown;}
+        #section3 {padding-top:50px;height:500px;color: wheat;background-color: brown;}
+        #section41 {padding-top:50px;height:500px; color: wheat; background-color: brown;}
+        #section42 {padding-top:50px;height:500px; color: wheat; background-color: brown;}
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+<nav class="navbar navbar-inverse navbar-fixed-top " style="background-color: brown; font-size: 20px;color: wheat;">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="html1.html" >Home</a>
+        </div>
+        <div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li><a href="#section1">Electronic And communication</a></li>
+                    <li><a href="#section2">Computer Science</a></li>
+                    <li><a href="#section3">Civil Engineering</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Fire Technology<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#section41">Section 4-1</a></li>
+                            <li><a href="#section42">Section 4-2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="parallax"></div>
+
+<div id="section1" class="container-fluid">
+    <h1 style="background-color: black">Electronic And Communication</h1>
+    <p class="para1" style="font-size: 150%;color:wheat"><img src= architecture-1122359_1920.jpg class="img-circle" alt="Cinque Terre" style=" float: right;padding-right: 1%;width: 40%;height: 30%;">
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+    </p></div>
+
+<div class="parallax"></div>
+
+<div id="section2" class="container-fluid">
+    <h1 style="background-color: black">Computer Science</h1>
+    <p class="para1" style="font-size: 150%;color: wheat"><img src= campus-1818084_1920.jpg class="img-circle" alt="Cinque Terre" style=" float: right;padding-right: 1%;width: 40%;height: 30%;">
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+    </p></div>
+
+<div class="parallax"></div>
+
+<div id="section3" class="container-fluid">
+    <h1 style="background-color: black">Civil Engineering</h1>
+    <p class="para1" style="font-size: 150%;color: wheat"><img src=library-1697314_1920.jpg class="img-circle" alt="Cinque Terre" style=" float: right;padding-right: 1%;width: 40%;height: 30%;">
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+    </p></div>
+
+<div class="parallax"></div>
+
+
+<div id="section41" class="container-fluid">
+    <h1 style="background-color: black">Fire Technology Submenu 1</h1>
+    <p class="para1" style="font-size: 150%;color:wheat"><img src= student-2816892_1920.jpg class="img-circle" alt="Cinque Terre" style=" float: right;padding-right: 1%;width: 40%;height: 30%;">
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+    </p></div>
+
+<div class="parallax"></div>
+
+
+<div id="section42" class="container-fluid">
+    <h1 style="background-color: black">Fire Technology Submenu 2</h1>
+    <p class="para1" style="font-size: 150%;color: wheat"><img src= library-869061_1920.jpg class="img-circle" alt="Cinque Terre" style=" float: right;padding-right: 1%;width: 40%;height: 30%;">
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+        The Greater Good Science Center’s Education Program aspires to provide education professionals with a deeper scientific understanding of social-emotional learning, mindfulness, and other positive youth development practices.
+    </p></div>
+
+<div class="parallax"></div>
